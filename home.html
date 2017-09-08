@@ -25,11 +25,11 @@
   </head>
   <body>
 	<!--Greeting Video -->
-	<div class="greeting video">
+	<div class="greeting video" style="background-color:black">
 		<div class="container clearfix">
     			<div class="row h-100">
     				<div class="col-sm-5">
-						<video source src="assets/video/New York City by Air.mp4" type="video/mp4" autoplay></video>  				
+						<video source src="https://zuelligindustrial-my.sharepoint.com/personal/kulvaree_chankrachang_zuelligindustrial_com/_layouts/15/guestaccess.aspx?docid=0f6fa7a8c418d4003b6f0ced6cbf1d576&authkey=AXKFCkqBf42OT93JRA5vy6A" type="video/mp4" autoplay></video>  				
 					</div><!-- col -->
 					<div class="col-sm-7 my-auto">
 			    		<img src="assets/img/logo-white-transparent.png" alt="Mattia Baldi Studio"></img>
@@ -48,43 +48,47 @@
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarCollapse">
 			<ul class="navbar-nav mr-auto">
-			  <li class="nav-item active">
-				<center><a class="nav-link" href="home.html">Home<span class="sr-only">Home</span></a></center>
+			  <li class="nav-item">
+				<center><a class="nav-link" href="#">Photos</a></center>
 			  </li>
 			  <li class="nav-item">
-				<center><a class="nav-link" href="#">Fashion and Portraits</a></center>
+				<center><a class="nav-link" href="#">Videos</a></center>
 			  </li>
 			  <li class="nav-item">
-				<center><a class="nav-link" href="#">Automotives</a></center>
-			  </li>
-			  <li class="nav-item">
-				<center><a class="nav-link" href="#">BTS</a></center>
+				<center><a class="nav-link" href="#">Bio</a></center>
 			  </li>
 			  <li class="nav-item">
 				<center><a class="nav-link" href="#">Contact</a></center>
 			  </li>
-			  <!-- social icons-->
-				<center><li><div class = "row"><div class="col-md-8">
+			  <!-- social icons with the 3x size and on the center-->
+				<li><div class = "row"><div class="span6" style="float: none; margin: 0 auto;">
 					<!--facebook icon -->
 					<a href="https://facebook.com/mattiabaldi" class="badge social facebook" target="_blank">
-						<span class="fa-stack fa-lg">
-							<span><i class="fa fa-circle fa-stack-2x" style = "color:#3b5998"></i></span>
+						<span class="fa-stack fa-lg fa-3x">
+							<span><i class="fa fa-circle fa-stack-2x" style = "color:black"></i></span>
 							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 						</span>
 					</a>
 					<!--instagram icon -->
 					<a href="http://instagram.com/mattiabaldi_studio" class="badge social instragram" target="_blank">
-						<span class="fa-stack fa-lg">
-							<span><i class="fa fa-circle fa-stack-2x" style = "color:#dd2a78"></i></span>
+						<span class="fa-stack fa-lg fa-3x">
+							<span><i class="fa fa-circle fa-stack-2x" style = "color:black"></i></span>
 							<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
 						</span>
 					</a>
-				</div></div></li></center>	<!-- END ============ social icons-->
+				</div></div></li>	<!-- END ============ social icons-->
 			</ul>
 		  </div>
 		</nav>
 	</div>
 	
+	<!-- Photo Contents -->
+	<div class="row masonry" data-columns>
+        <div class="item"><img src="assets/img/MBtest1.png" alt="Mattia Baldi Studio"></div>
+        <div class="item"><img src="assets/img/MBtest2.png" alt="Mattia Baldi Studio"></div>
+        <div class="item"><img src="assets/img/MBtest3.png" alt="Mattia Baldi Studio"></div>
+        <!-- ... -->
+    </div><!--END ========= Photo Contents -->
 
     
     
@@ -102,21 +106,22 @@
 				<center><a class="nav-link" href="home.html">Home<span class="sr-only">Home</span></a></center>
 			  </li>
 			  <li class="nav-item">
-				<center><a class="nav-link" href="#">Fashion and Portraits</a></center>
+				<center><a class="nav-link" href="#">Photos</a></center>
 			  </li>
 			  <li class="nav-item">
-				<center><a class="nav-link" href="#">Automotives</a></center>
+				<center><a class="nav-link" href="#">Videos</a></center>
 			  </li>
 			  <li class="nav-item">
-				<center><a class="nav-link" href="#">BTS</a></center>
+				<center><a class="nav-link" href="#">Bio</a></center>
 			  </li>
 			  <li class="nav-item">
 				<center><a class="nav-link" href="#">Contact</a></center>
 			  </li>
 		</div>
-		<div class="container">
-            <p class="fixed-right">&copy; 2017 Mattia Baldi Studio</p>               
-        </div><!-- container -->
+		<!--name on the footer within one line -->
+		<div class="row ">
+			<div class="text-right" style = "color:white">&copy;2017 Mattia Baldi Studio</div>	
+		</div>
 		</nav>
 		</div>
 	</footer>
@@ -133,5 +138,7 @@
     <script src="assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+	<!-- Salvattore Content Layout-->
+	<script src="/assets/js/vendor/salvattore.min.js"></script>
   </body>
 </html>
