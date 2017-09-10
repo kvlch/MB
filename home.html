@@ -17,7 +17,7 @@
                                         <!--Font Awesome Icons -->
                                         <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
                                             
-                                        <!--Fading when scroll-->
+                                        <!--Fading when scroll & Affix Nav Bar-->
                                         <link href="assets/css/fading.css" rel="stylesheet">
                                             
                                             
@@ -29,7 +29,6 @@
                                             </head>
 <body>
         <!-- HEADER -->
-        <header>
             <!--Greeting Video with fading down function -->
             <div class="greeting video" style="background-color:black">
                 <div class="inline">
@@ -51,10 +50,9 @@
         </header><!-- END ============ header-->
         
           
-        <!-- nav bar with fade up function-->
-        <div class="fade-in fade-ani">
-        <div class="navbar-wrapper">
-            <nav class="navbar navbar-light navbar-inverse" role="navigation" style="opacity:0.9;background-color:white" >
+        <!-- nav bar with fade up function -->
+        <div class="navbar-wrapper fade-in fade-ani" data-spy="affix" data-offset-top="775">
+            <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white" >
                 <a class="navbar-brand" href="/"><img src="assets/img/logo.png" alt="Mattia Baldi Studio"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -90,32 +88,28 @@
                     </ul>
                 </div>
             </nav>
-        </div></div>
+        </div>
         
 
-        
         <!-- Photo Contents -->
         <div class="row masonry" data-columns>
-            <div class="item">
-                <img src="assets/img/MBtest1.png">
-                <center>
+            <div class="item"><img src="assets/img/MBtest1.png">
+                <!--<center>
                 <h5> Topic </h5>
                 <p style="color:grey">context</p1>
-                </center>
+                </center>-->
             </div>
-            <div class="item">
-                <img src="assets/img/MBtest2.png">
-                <center>
+            <div class="item"><img src="assets/img/MBtest2.png">
+                <!--<center>
                 <h5> Topic </h5>
                 <p style="color:grey">context</p1>
-                </center>
+                </center>-->
             </div>
-            <div class="item">
-                <img src="assets/img/MBtest3.png">
-                <center>
+            <div class="item"><img src="assets/img/MBtest3.png">
+                <!--<center>
                 <h5> Topic </h5>
                 <p style="color:grey">context</p1>
-                </center>
+                </center>-->
             </div>
             <!--<div class="item"><img src="assets/img/NYpt1.jpg"></div>
             <div class="item"><img src="assets/img/NYls1.jpg"></div>
@@ -125,7 +119,6 @@
             
              -->
         </div><!--END ========= Photo Contents -->
-        
         
         
         
@@ -171,8 +164,8 @@
         <script src="assets/js/vendor/salvattore.min.js"></script>
         <!--Fading when scroll-->
         <script src="assets/js/vendor/fading.js"></script>
-        <!--Skroll Effect -->
-        <script src="assets/js/vendor/skrollr.min.js"></script>
+        <!--Affix effect on the nav bar -->
+        <script src="assets/js/vendor/affix.js"></script>
 
     </body>
 </html>

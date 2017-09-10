@@ -16,3 +16,16 @@ div:nth-child(even){}
 .fade-left.showing{left:-0px;opacity:1;}
 .fade-right.showing{right:-0px;opacity:1;}
 
+.affix{
+    position: fixed;
+    padding-left:0;
+    left: 0%;
+    top: 0%;
+    width:100%;
+    -webkit-transform-z(0);
+}
+/*.affix-top{
+    opacity:0;
+}*/
+
+
