@@ -19,6 +19,9 @@
 			
 		<!--Fading when scroll & Affix Nav Bar-->
 		<link href="assets/css/fading.css" rel="stylesheet">
+            
+        <!--Scroll down angle-->
+        <link href="assets/css/scroll-down.css" rel="stylesheet">
 			
 			
 		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -40,9 +43,12 @@
 					<div class="col-sm-7 my-auto">
 						<img src="assets/img/logo-white-transparent.png" alt="Mattia Baldi Studio"></img>
 					</div>
+                    <section id="section01" class="demo">
+                        <a href="#section02"><span></span></a>
+                    </section>
 					<!--Angle down anchor -->
-					<div class="mx-auto">
-						<i class="fa fa-angle-down fa-3x" aria-hidden="true" style = "color:white"></i>
+					<div class="">
+						<i class="mx-auto fa fa-angle-down fa-3x" aria-hidden="true" style = "color:white"></i>
 					</div>
 					
 				</div><!-- row -->
@@ -51,7 +57,7 @@
         
           
         <!-- nav bar with fade up function fade-in fade-ani-->
-        <div class="navbar-wrapper" data-spy="affix" data-offset-top="775">
+        <div class="navbar-wrapper" data-spy="affix" data-offset-top="775" id="section2">
             <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white" >
                 <a class="navbar-brand" href="/"><img src="assets/img/logo.png" alt="Mattia Baldi Studio"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -158,6 +164,8 @@
         <script src="assets/js/vendor/fading.js"></script>
         <!--Affix effect on the nav bar -->
         <script src="assets/js/vendor/affix.js"></script>
+        <!--Scroll down angle-->
+        <script src="assets/js/vendor/scroll-down.js"></script>
 
     </body>
 </html>
