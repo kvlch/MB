@@ -17,6 +17,8 @@
     <!--Font Awesome Icons -->
     <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	
+	<!--Fix scroll x only -->
+	
 	
 	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -24,23 +26,23 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
   </head>
-  <body>
+  <body style="overflow-y:hidden;">
       
           <!-- nav bar fixed top-->
               <div class="navbar-wrapper">
                   <nav class="navbar navbar-light navbar-inverse fixed-top" role="navigation" style="opacity:0.9;background-color:white" >
-                      <a class="navbar-brand" href="/"><img src="assets/img/logo.png" alt="Mattia Baldi Studio"></a>
+                      <a class="navbar-brand" href="home.html"><img src="assets/img/logo.png" alt="Mattia Baldi Studio"></a>
 					  <!--View layout icons -->
 					  <div class="container" id="viewlayout_wrapper">
-						<div class="row" style="position:absolute; right:100px;">
+						<div class="row" style="position:absolute; right:30px; top:1em">
 						  <a class="fa fa-table fa-2x" href="photos-grid.html" style="padding-right:10px; color:grey"></a><!--grid layout-->
-						  <a class="fa fa-columns fa-2x" href="photos-gallery.html" style="padding-right:5px; color:grey"></a><!--gallery layout-->
+						  <a class="fa fa-columns fa-2x" href="photos-gallery.html" style="padding-right:10px; color:grey"></a><!--gallery layout-->
+							<!--Toggle Menu -->
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+							  <span class="fa fa-navicon fa-1x" style="color:grey"></span>
+						  </button>
 						</div>
-					  </div>
-					  <!--Toggle Menu -->
-					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                      </button>
+					  </div><!-- END ==== container-->
                       <div class="collapse navbar-collapse" id="navbarCollapse">
                           <ul class="navbar-nav mr-auto">
                               <li class="nav-item active">
@@ -78,23 +80,29 @@
             <div style="padding:2em;" data-0="display:none;" data-top-top="display:block;" data-anchor-target="#nav" data-edge-strategy="set">&nbsp;</div>
           
           <!-- Photo Contents -->
-          <div class="container" style="margin-left:0; margin-right:0;">
-				<div class="row" style="overflow-x:scroll; overflow-y:hidden; white-space:nowrap;">
-					<div class="col-xs-4" style="float:none; display:inline-block; white-space:normal; vertical-align:top; background-color:lightgrey; padding: 20px;">
-						<img src="assets/img/MBtest1.png" height="580px">
-					
-					</div>
-					<div class="col-xs-4" style="float:none; display:inline-block; white-space:normal; vertical-align:top; background-color:lightgrey; padding: 20px;"><img src="assets/img/MBtest2.png" height="580px"></div>
-					<div class="col-xs-4" style="display: inline-block; float: left; background-color:lightgrey; padding: 20px;"><img src="assets/img/MBtest3.png" height="580px"></div>
-					<div class="col-xs-4" style="display: inline-block; float: left; background-color:lightgrey; padding: 20px;"><img src="assets/img/sample1.jpg" height="580px"></div>
-					<div class="col-xs-4" style="display: inline-block; float: left; background-color:lightgrey; padding: 20px;"><img src="assets/img/sample2.jpg" height="580px"></div>
-					<div class="col-xs-4" style="display: inline-block; float: left; background-color:lightgrey; padding: 20px;"><img src="assets/img/sample3.jpg" height="580px"></div>
-					<div class="col-xs-4" style="display: inline-block; float: left; background-color:lightgrey; padding: 20px;"><img src="assets/img/sample4.jpg" height="580px"></div>
-					<div class="col-xs-4" style="display: inline-block; float: left; background-color:lightgrey; padding: 20px;"><img src="assets/img/sample5.jpg" height="580px"></div>
-					<div class="col-xs-4" style="display: inline-block; float: left; background-color:lightgrey; padding: 20px;"><img src="assets/img/sample6.jpg" height="580px"></div>
-					<div class="col-xs-4" style="display: inline-block; float: left; background-color:lightgrey; padding: 20px;"><img src="assets/img/sample7.jpg" height="580px"></div>
-                </div>
-          </div><!--END ========= Photo Contents -->
+		  <table class="table">
+			<tr class="table-row" style="margin-left:2em; white-space: nowrap;">
+				<td class="cell"><img src="assets/img/MBtest1.png"></div>
+				<td class="cell"><img src="assets/img/MBtest2.png"></div>
+				<td class="cell"><img src="assets/img/MBtest3.png"></div>
+				<td class="cell"><img src="assets/img/MBtest1.png"></div>
+				<td class="cell"><img src="assets/img/MBtest2.png"></div>
+				<td class="cell"><img src="assets/img/MBtest3.png"></div>
+				<td class="cell"><img src="assets/img/MBtest1.png"></div>
+				<td class="cell"><img src="assets/img/MBtest2.png"></div>
+				<td class="cell"><img src="assets/img/MBtest3.png"></div>
+				<td class="cell"><img src="assets/img/MBtest1.png"></div>
+				<td class="cell"><img src="assets/img/MBtest2.png"></div>
+				<td class="cell"><img src="assets/img/MBtest3.png"></div>
+				<td class="cell"><img src="assets/img/MBtest1.png"></div>
+				<td class="cell"><img src="assets/img/MBtest2.png"></div>
+				<td class="cell"><img src="assets/img/MBtest3.png"></div>
+				<td class="cell"><img src="assets/img/MBtest1.png"></div>
+				<td class="cell"><img src="assets/img/MBtest2.png"></div>
+				<td class="cell"><img src="assets/img/MBtest3.png"></div>
+
+			</tr>
+          </table><!--END ========= Photo Contents -->
           
           
           
@@ -103,7 +111,7 @@
               
               <!-- nav bar-->
               <div class="navbar-wrapper">
-                  <nav class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation">
+                  <nav class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation" style="position:absolute; bottom:0px; width:100%;">
                       <ul class="navbar-nav mr-auto">
                           <li class="nav-item">
                               <center><a class="nav-link" href="home.html">HOME<span class="sr-only">HOME</span></a></center>
