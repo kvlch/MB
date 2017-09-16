@@ -26,6 +26,10 @@
 		<!-- remove bullet on the list-->
 		<style>
 			li {list-style-type: none;}
+			
+			.logowhite{
+				position:absolute; top:50%; left:40%;
+			}
 		</style>
 			
 			
@@ -51,18 +55,14 @@
 			<video muted src="https://zuelligindustrial-my.sharepoint.com/personal/kulvaree_chankrachang_zuelligindustrial_com/_layouts/15/guestaccess.aspx?docid=0f6fa7a8c418d4003b6f0ced6cbf1d576&authkey=AXKFCkqBf42OT93JRA5vy6A" 
 					type="video/mp4" autoplay class="inline mx-auto"
 			></video>
-			<img src="assets/img/logo-white-transparent.png" alt="Mattia Baldi Studio"
-				style="position:absolute; top:50%; left:40%;"
+			<img class="logowhite" src="assets/img/logo-white-transparent.png" alt="Mattia Baldi Studio"
 				data-anchor-target=".begin"
-				data-start="transform: translateY(0px); opacity: 1;"
-				data-top-bottom="transform: translateY(170px); opacity: .2"
+				data-top="transform: translateY(0px); opacity: 1;"
+				data-bottom="transform: translateY(700px); opacity: .2"
 			></img>
 			<!--Angle down anchor -->
 			<section id="section01" class="demo" 
 				style="position:relative; left:0; top:1px;"
-				data-anchor-target="#section02"
-				data--200-top="opacity:1;"
-				data--100-top="opacity:0"
 			><a href="#section02"><span></span></a>
 			</section>
 		</div>
@@ -70,14 +70,10 @@
         
           
         <!-- nav bar with fade up function fade-in fade-ani-->
-        <div class="navbar-wrapper" id="section02" data-spy="affix" data-offset-top="775" >
+        <div class="navbar-wrapper fade-in fade-ani" id="section02" data-spy="affix" data-offset-top="775" >
             <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white" >
-                <a class="navbar-brand" href="home.html" id="logo_black"
-					data-anchor-target="#section02"
-					data-start="position: absolute; opacity: 0"
-					data-top-top="position: fixed; opacity: 1;"
-					data-200-top-top="opacity: 0;"
-				><img src="assets/img/logo.png" alt="Mattia Baldi Studio"></a>
+                <a class="navbar-brand" href="home.html" id="logoblack">
+				<img src="assets/img/logo.png" alt="Mattia Baldi Studio"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -218,6 +214,8 @@
         <script src="assets/js/vendor/affix.js"></script>
         <!--Scroll down angle-->
         <script src="assets/js/vendor/scroll-down.js"></script>
+		<!--Skrollr effect-->
+		<script src="assets/js/vendor/skrollr.js"></script>
 
     </body>
 </html>
