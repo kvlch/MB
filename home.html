@@ -39,30 +39,45 @@
 <body>
         <!-- HEADER -->
 		<!--Greeting Video with fading down function -->
-		<div class="container" style="background-color:black" width="100%">
-			<div class="inline">
-				<div class="row" width="100%">
-					<div class="col-sm-5" id="intro_video_wrapper">
-						<video muted src="https://zuelligindustrial-my.sharepoint.com/personal/kulvaree_chankrachang_zuelligindustrial_com/_layouts/15/guestaccess.aspx?docid=0f6fa7a8c418d4003b6f0ced6cbf1d576&authkey=AXKFCkqBf42OT93JRA5vy6A" type="video/mp4" width="device-width" autoplay id="intro_video"></video>
-					</div><!-- col -->
-					<div class="col-sm-7 my-auto">
-						<img src="assets/img/logo-white-transparent.png" alt="Mattia Baldi Studio"></img>
-					</div>
-					<!--Angle down anchor -->
-                    <section id="section01" class="demo">
-					  <a href="#section02"><span></span></a>
-					</section>
-
-					
-				</div><!-- row -->
-			</div><!-- container -->
-		</div><!-- END ============ header-->
+		
+		<!-- <div class="container begin" style="background-color:black" width="100%"> -->
+			<!-- <div class="inline"> -->
+				<!-- <div class="row" width="100%">				 -->
+				<!-- </div><!-- row -->
+			<!-- </div><!-- container -->
+		<!-- </div> -->
+		
+		<div class="row begin" style="background-color:black">
+			<video muted src="https://zuelligindustrial-my.sharepoint.com/personal/kulvaree_chankrachang_zuelligindustrial_com/_layouts/15/guestaccess.aspx?docid=0f6fa7a8c418d4003b6f0ced6cbf1d576&authkey=AXKFCkqBf42OT93JRA5vy6A" 
+					type="video/mp4" autoplay class="inline mx-auto"
+			></video>
+			<div class="col" style="position:static; vertical-align:center;">
+				<img src="assets/img/logo-white-transparent.png" alt="Mattia Baldi Studio"
+					data-anchor-target=".begin"
+					data-start="transform: translateY(0px); opacity: 1;"
+					data-top-bottom="transform: translateY(50px); opacity: .2;"
+				></img>
+			</div>	
+			<!--Angle down anchor -->
+			<section id="section01" class="demo"
+				data-anchor-target="#section02"
+				data-top="opacity:1;"
+				data-bottom="opacity:0"
+			><a href="#section02"><span></span></a>
+			</section>
+		</div>
+		<!-- END ============ header-->
         
           
         <!-- nav bar with fade up function fade-in fade-ani-->
         <div class="navbar-wrapper" id="section02" data-spy="affix" data-offset-top="775" >
             <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white" >
-                <a class="navbar-brand" href="home.html"><img src="assets/img/logo.png" alt="Mattia Baldi Studio"></a>
+                <a class="navbar-brand" href="home.html" id="logo_black"
+					data-anchor-target="#section02"
+					data-start="position: absolute; opacity: 0"
+					data-top-top="position: fixed; opacity: 1;"
+					data-200-top-top="opacity: 0;"
+				><img src="assets/img/logo.png" alt="Mattia Baldi Studio"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

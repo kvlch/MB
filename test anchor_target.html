@@ -41,10 +41,18 @@
 </head>
 
 <body>
+	<h1>anchor-target</h1>
+	<section class="begin">
+	<div class="container"><div class="row">
+		<img src="assets/img/MBtest1.png"></img>
+		<img class="mx-auto" id="logo_white" src="assets/img/logo-white-transparent.png" alt="Mattia Baldi Studio" style="margin-top:50px;"
+			data-anchor-target=".begin"
+			data-start="transform: translateY(0px); opacity: 1;"
+			data-top-bottom="transform: translateY(170px); opacity: .2"
+		></img>
+	</div></div>
+	</section>
 	<div id="skrollr-body">
-		<h1>anchor-target</h1>
-		
-
 		<p>
 			<strong><em>BLUE</em> on the right is so unhappy. Scroll down so he can see his buddy <em>RED</em>.</strong>
 		</p>
@@ -63,13 +71,9 @@
 
 		<p>Biltong pastrami kielbasa short ribs, turducken shoulder pork chop boudin ground round speck cow. Fatback leberkas shank hamburger, tail pork belly tongue bresaola short ribs corned beef speck tri-tip ribeye. Filet mignon shoulder speck pastrami. Ham hock turducken corned beef shankle. Meatloaf shankle sausage boudin, shank flank turducken tenderloin pancetta ball tip. Biltong boudin jowl drumstick pig.</p>
 
-		<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>
+	<a class="navbar-brand" href="#" id="logo_black"><img src="assets/img/logo.png" alt="Mattia Baldi Studio"></a>
 
-		<img id="logo_white" src="assets/img/logo-white-transparent.png" alt="Mattia Baldi Studio"
-			data-anchor-target="#logo_black"
-			data-bottom="opacity:0;"
-			data-top="position:fixed;-webkit-transform-z(0); opacity:1"
-		></img>
+		<p>Sirloin venison bresaola andouille pastrami short ribs. Short loin cow capicola tail ham hock leberkas. Frankfurter meatloaf capicola, swine ball tip jerky pork loin pork belly cow ribeye brisket strip steak jowl beef ribs ham hock. Pastrami ham hock rump turkey, pork belly capicola jerky. Turkey chuck beef, bresaola filet mignon jerky tri-tip pastrami. Bacon capicola jowl fatback short ribs. Speck shankle bacon chuck.</p>
 		
 		<p>Pork loin tail pork belly shank ham. Kielbasa venison ham, short loin ham hock beef ribs tri-tip ball tip pork belly. Ribeye sirloin sausage tenderloin hamburger. Strip steak tongue turkey, andouille bacon beef ribs venison. T-bone ball tip bresaola fatback, ground round meatball chicken sausage tongue pork chop leberkas sirloin jerky shank bacon. Turducken sirloin cow shankle pig, leberkas venison boudin pastrami.</p>
 
@@ -101,7 +105,6 @@
 		<p>Biltong pastrami kielbasa short ribs, turducken shoulder pork chop boudin ground round speck cow. Fatback leberkas shank hamburger, tail pork belly tongue bresaola short ribs corned beef speck tri-tip ribeye. Filet mignon shoulder speck pastrami. Ham hock turducken corned beef shankle. Meatloaf shankle sausage boudin, shank flank turducken tenderloin pancetta ball tip. Biltong boudin jowl drumstick pig.</p>
 
 		
-    <a class="navbar-brand" href="#" id="logo_black"><img src="assets/img/logo.png" alt="Mattia Baldi Studio"></a>
 
 		<!--RED (buddy)-->
 		<div id="red" data-bottom="transform:rotate(0deg);transform-origin:center;opacity:0.5;" 
