@@ -346,3 +346,7 @@ li {list-style-type: none;}
 .logowhite{
 	position:relative; top:-350px; left:40%;
 }
+
+.logged-in .navbar-light{
+	top:775px;
+}

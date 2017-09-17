@@ -46,43 +46,4 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mbs' ); ?></a>
 
-	<!-- HEADER -->
-		<!--Greeting Video with fading down function -->
-		<header class="row begin" style="background-color:black">
-			<video muted src="https://zuelligindustrial-my.sharepoint.com/personal/kulvaree_chankrachang_zuelligindustrial_com/_layouts/15/guestaccess.aspx?docid=0f6fa7a8c418d4003b6f0ced6cbf1d576&authkey=AXKFCkqBf42OT93JRA5vy6A" 
-					type="video/mp4" autoplay loop class="inline mx-auto"
-			></video>
-			<img class="logowhite" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo-white-transparent.png" alt="Mattia Baldi Studio"
-				data-anchor-target=".begin"
-				data-bottom-top="transform: translateY(0px); opacity: 1;"
-				data-top-bottom="transform: translateY(250px); opacity: .2"
-			></img>
-			<!--Angle down anchor -->
-			<section id="section01" class="demo" 
-				style="position:relative; left:0; top:1px;"
-			><a href="#section02"><span></span></a>
-			</section>
-		</header>
-		<!-- END ============ header-->
-		<!-- nav bar with fade up function fade-in fade-ani-->
-        <div class="navbar-wrapper fade-in fade-ani" id="section02" data-spy="affix" data-offset-top="775" >
-            <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white" >
-                <a class="navbar-brand" href="home.html" id="logoblack">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="Mattia Baldi Studio"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-				
-				<?php
-					wp_nav_menu(array(
-						'theme_location'	=> 'primary',
-						'container'			=> 'nav',
-						'container_class'	=> 'navbar-collapse collapse',
-						'menu_class'		=> 'navbar navbar-light navbar-inverse'
-						
-					));
-				?>
-				
-                </div>
-            </nav>
-		</div><!-- END ================== nav bar with fade up function -->
+</div>
