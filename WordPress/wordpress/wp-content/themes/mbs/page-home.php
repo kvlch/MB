@@ -39,23 +39,23 @@ get_header(); ?>
 		<!-- END ============ header-->
 		<!-- nav bar with fade up function fade-in fade-ani-->
         <div class="navbar-wrapper fade-in fade-ani" id="section02" data-spy="affix" data-offset-top="775" >
-            <nav class="navbar navbar-dark navbar-inverse" style="opacity:0.9;background-color:white" >
+            <nav class="navbar navbar-dark navbar-inverse" style="opacity:0.9; background-color:white;" >
                 <a class="navbar-brand" href="home" id="logoblack">
-				<img src="<?php echo $logo_black['url']; ?>" alt="Mattia Baldi Studio"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<img src="<?php echo $logo_black['url']; ?>" alt="Mattia Baldi Studio" width="270px"></a>
+                <i class="fa-bars fa-2x" aria-hidden="true" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </i>
 				
 				<div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <center><a class="nav-link" href="photos-gallery"><?php echo $nav_works; ?></a></center>
+                            <center><a class="nav-link" href="photos-gallery" style="color:black; font-size:30px;"><?php echo $nav_works; ?></a></center>
                         </li>
                         <li class="nav-item">
-                            <center><a class="nav-link" href="moving"><?php echo $nav_moving; ?></a></center>
+                            <center><a class="nav-link" href="moving" style="color:black; font-size:30px;"><?php echo $nav_moving; ?></a></center>
                         </li>
                         <li class="nav-item">
-                            <center><a class="nav-link" href="contact"><?php echo $nav_contact; ?></a></center>
+                            <center><a class="nav-link" href="contact" style="color:black; font-size:30px;"><?php echo $nav_contact; ?></a></center>
                         </li>
                         <!-- social icons with the 3x size and on the center-->
                         <li><div class = "row"><div class="span6" style="float: none; margin: 0 auto;">

@@ -346,3 +346,7 @@ li {list-style-type: none;}
 .logowhite{
 	position:relative; top:-450px; left:25%;
 }
+
+.logged-in .narbar-dark{
+	margin-top:32px;
+}

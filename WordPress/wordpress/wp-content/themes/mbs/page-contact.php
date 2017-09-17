@@ -19,7 +19,7 @@ get_header(); ?>
 
 <!-- nav bar fixed top-->
         <div class="navbar-wrapper">
-            <nav class="navbar navbar-dark navbar-inverse fixed-top" role="navigation" style="opacity:0.9; background-color:white; margin-top:32px;" >
+            <nav class="navbar navbar-dark navbar-inverse fixed-top" role="navigation" style="opacity:0.9; background-color:white;" >
                 <a class="navbar-brand" href="home"><img src="<?php echo $logo_black['url']; ?>" alt="Mattia Baldi Studio" width="270px"></a>
                 <i class="fa-bars fa-2x" aria-hidden="true" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
