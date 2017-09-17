@@ -39,7 +39,7 @@ get_header(); ?>
 		<!-- END ============ header-->
 		<!-- nav bar with fade up function fade-in fade-ani-->
         <div class="navbar-wrapper fade-in fade-ani" id="section02" data-spy="affix" data-offset-top="775" >
-            <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white" >
+            <nav class="navbar navbar-dark navbar-inverse" style="opacity:0.9;background-color:white" >
                 <a class="navbar-brand" href="home" id="logoblack">
 				<img src="<?php echo $logo_black['url']; ?>" alt="Mattia Baldi Studio"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">

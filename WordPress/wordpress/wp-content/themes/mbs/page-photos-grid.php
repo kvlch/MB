@@ -14,7 +14,7 @@ get_header(); ?>
 
 	<!-- nav bar fixed top-->
 	  <div class="navbar-wrapper">
-		  <nav class="navbar navbar-light navbar-inverse fixed-top" role="navigation" style="opacity:0.9;background-color:white" >
+		  <nav class="navbar navbar-dark navbar-inverse fixed-top" role="navigation" style="opacity:0.9;background-color:white" >
 			  <a class="navbar-brand" href="<?php echo $nav_home; ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="Mattia Baldi Studio"></a>
 			  <!--View layout icons -->
 			  <div class="container" id="viewlayout_wrapper">

@@ -18,11 +18,11 @@ get_header(); ?>
 
 <!-- nav bar fixed top-->
         <div class="navbar-wrapper">
-            <nav class="navbar navbar-light navbar-inverse fixed-top" role="navigation" style="opacity:0.9;background-color:white" >
+            <nav class="navbar navbar-dark navbar-inverse fixed-top" role="navigation" style="opacity:0.9;background-color:white" >
                 <a class="navbar-brand" href="<?php echo $nav_home; ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="Mattia Baldi Studio"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-bars fa-2x" aria-hidden="true" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </i>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
