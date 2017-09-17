@@ -36,6 +36,8 @@
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/vendor/scroll-down.js"></script>
 	<!--Skrollr effect-->
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/vendor/skrollr.js"></script>
+	<!--copy mail to clipboard-->
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/vendor/copymail.js"></script>
 
 </body>
 </html>

@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=false">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="favicon.ico">
+		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	
 	<!--Font-->

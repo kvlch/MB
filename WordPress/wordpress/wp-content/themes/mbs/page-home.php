@@ -3,11 +3,21 @@
  * The template Name: Home Page
  * @package MBS
  */
-
+ 
+ /*Custom Fields*/
+ $project_test		= get_post_meta(10,project_test,true);
+ $pic_description1	= get_post_meta(10,pic_description1,true);
+ $pic_description2	= get_post_meta(10,pic_description2,true);
+ $pic_description3	= get_post_meta(10,pic_description3,true);
+ $nav_home	= get_post_meta(10,nav_home,true);
+ $nav_works	= get_post_meta(10,nav_works,true);
+ $nav_moving	= get_post_meta(10,nav_moving,true);
+ $nav_contact	= get_post_meta(10,nav_contact,true);
+  
 get_header(); ?>
 		<!-- HEADER -->
 		<!--Greeting Video with fading down function -->
-		<header class="row begin" style="background-color:black">
+		<header class="row begin" style="background-color:black; height:730px;">
 			<video muted src="https://zuelligindustrial-my.sharepoint.com/personal/kulvaree_chankrachang_zuelligindustrial_com/_layouts/15/guestaccess.aspx?docid=0f6fa7a8c418d4003b6f0ced6cbf1d576&authkey=AXKFCkqBf42OT93JRA5vy6A" 
 					type="video/mp4" autoplay loop class="inline mx-auto"
 			></video>
@@ -18,7 +28,7 @@ get_header(); ?>
 			></img>
 			<!--Angle down anchor -->
 			<section id="section01" class="demo" 
-				style="position:relative; left:0; top:1px;"
+				style="position:relative; left:0; top:-200px; height:50px;"
 			><a href="#section02"><span></span></a>
 			</section>
 		</header>
@@ -26,23 +36,43 @@ get_header(); ?>
 		<!-- nav bar with fade up function fade-in fade-ani-->
         <div class="navbar-wrapper fade-in fade-ani" id="section02" data-spy="affix" data-offset-top="775" >
             <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white" >
-                <a class="navbar-brand" href="home.html" id="logoblack">
+                <a class="navbar-brand" href="<?php echo $nav_home; ?>" id="logoblack">
 				<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="Mattia Baldi Studio"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 				
-				<?php
-					wp_nav_menu(array(
-						'theme_location'	=> 'primary',
-						'container'			=> 'nav',
-						'container_class'	=> 'navbar-collapse collapse',
-						'menu_class'		=> 'navbar navbar-light navbar-inverse'
-						
-					));
-				?>
-				
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <center><a class="nav-link" href="<?php echo $nav_works; ?>">WORKS</a></center>
+                        </li>
+                        <li class="nav-item">
+                            <center><a class="nav-link" href="<?php echo $nav_moving; ?>">MOVING</a></center>
+                        </li>
+                        <li class="nav-item">
+                            <center><a class="nav-link" href="<?php echo $nav_contact; ?>">CONTACT</a></center>
+                        </li>
+                        <!-- social icons with the 3x size and on the center-->
+                        <li><div class = "row"><div class="span6" style="float: none; margin: 0 auto;">
+                            <!--facebook icon -->
+                            <a href="https://facebook.com/mattiabaldi" class="badge social facebook" target="_blank">
+                                <span class="fa-stack fa-lg fa-3x">
+                                    <span><i class="fa fa-circle fa-stack-2x" style = "color:black"></i></span>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <!--instagram icon -->
+                            <a href="http://instagram.com/mattiabaldi_studio" class="badge social instragram" target="_blank">
+                                <span class="fa-stack fa-lg fa-3x">
+                                    <span><i class="fa fa-circle fa-stack-2x" style = "color:black"></i></span>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </div></div></li>	<!-- END ============ social icons-->
+                    </ul>
                 </div>
+				
             </nav>
 		</div><!-- END ================== nav bar with fade up function -->
 
@@ -51,51 +81,51 @@ get_header(); ?>
 		<ul class="grid row masonry" data-rows style="margin-left:2em;">
 			<!-- <div class="grid-sizer"></div> -->
 			<!-- <div class="gutter-sizer"></div> -->
-				<li class="grid-item"><img src="assets/img/MBtest1.png">
+				<li class="grid-item"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/MBtest1.png">
 					<div id="info">
 						<center>
-						<h5> Topic </h5>
-						<p style="color:grey">context</p1>
+						<h5><?php echo $project_test; ?></h5>
+						<p style="color:grey"><?php echo $pic_description1; ?></p1>
 						</center>
 					</div>
 				</li>	
-				<li class="grid-item"><img src="assets/img/MBtest2.png">
+				<li class="grid-item"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/MBtest2.png">
 					<div id="info">
 						<center>
-						<h5> Topic </h5>
-						<p style="color:grey">context</p1>
+						<h5><?php echo $project_test; ?></h5>
+						<p style="color:grey"><?php echo $pic_description2; ?></p1>
 						</center>
 					</div>
 				</li>
-				<li class="grid-item"><img src="assets/img/MBtest3.png" height="580px">
+				<li class="grid-item"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/MBtest3.png" height="580px">
 					<div id="info">
 						<center>
-						<h5> Topic </h5>
-						<p style="color:grey">context</p1>
+						<h5><?php echo $project_test; ?></h5>
+						<p style="color:grey"><?php echo $pic_description3; ?></p1>
 						</center>
 					</div>
 				</li>
-				<li class="grid-item"><img src="assets/img/MBtest1.png">
+				<li class="grid-item"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/MBtest1.png">
 					<div id="info">
 						<center>
-						<h5> Topic </h5>
-						<p style="color:grey">context</p1>
+						<h5><?php echo $project_test; ?></h5>
+						<p style="color:grey"><?php echo $pic_description1; ?></p1>
 						</center>
 					</div>
 				</li>
-				<li class="grid-item"><img src="assets/img/MBtest2.png">
+				<li class="grid-item"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/MBtest2.png">
 					<div id="info">
 						<center>
-						<h5> Topic </h5>
-						<p style="color:grey">context</p1>
+						<h5><?php echo $project_test; ?></h5>
+						<p style="color:grey"><?php echo $pic_description2; ?></p1>
 						</center>
 					</div>
 				</li>
-				<li class="grid-item"><img src="assets/img/MBtest3.png">
+				<li class="grid-item"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/MBtest3.png">
 					<div id="info">
 						<center>
-						<h5> Topic </h5>
-						<p style="color:grey">context</p1>
+						<h5><?php echo $project_test; ?></h5>
+						<p style="color:grey"><?php echo $pic_description3; ?></p1>
 						</center>
 					</div>
 				</li>
@@ -111,16 +141,16 @@ get_header(); ?>
                 <nav class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <center><a class="nav-link" href="home.html">HOME<span class="sr-only">HOME</span></a></center>
+                            <center><a class="nav-link" href="<?php echo $nav_home; ?>">HOME<span class="sr-only">HOME</span></a></center>
                         </li>
                         <li class="nav-item active">
-                            <center><a class="nav-link" href="photos-gallery.html">WORKS</a></center>
+                            <center><a class="nav-link" href="<?php echo $nav_works; ?>">WORKS</a></center>
                         </li>
                         <li class="nav-item">
-                            <center><a class="nav-link" href="#">MOVING</a></center>
+                            <center><a class="nav-link" href="<?php echo $nav_moving; ?>">MOVING</a></center>
                         </li>
                         <li class="nav-item">
-                            <center><a class="nav-link" href="contact.html">CONTACT</a></center>
+                            <center><a class="nav-link" href="<?php echo $nav_contact; ?>">CONTACT</a></center>
                         </li>
                         
                     </ul>
