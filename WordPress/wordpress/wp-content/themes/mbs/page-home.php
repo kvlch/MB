@@ -4,7 +4,7 @@
  * @package MBS
  */
  
- /*Custom Fields*/
+ /*Advanced Custom Fields*/
  $project_test		= get_post_meta(10,project_test,true);
  $pic_description1	= get_post_meta(10,pic_description1,true);
  $pic_description2	= get_post_meta(10,pic_description2,true);
@@ -13,7 +13,11 @@
  $nav_works	= get_post_meta(10,nav_works,true);
  $nav_moving	= get_post_meta(10,nav_moving,true);
  $nav_contact	= get_post_meta(10,nav_contact,true);
-  
+ $instagram_url	= get_post_meta(10,instagram_url,true); 
+ $facebook_url	= get_post_meta(10,facebook_url,true);
+ $logo_white	= get_field('logo_white');
+ $logo_black	= get_field('logo_black');
+ 
 get_header(); ?>
 		<!-- HEADER -->
 		<!--Greeting Video with fading down function -->
@@ -21,7 +25,7 @@ get_header(); ?>
 			<video muted src="https://zuelligindustrial-my.sharepoint.com/personal/kulvaree_chankrachang_zuelligindustrial_com/_layouts/15/guestaccess.aspx?docid=0f6fa7a8c418d4003b6f0ced6cbf1d576&authkey=AXKFCkqBf42OT93JRA5vy6A" 
 					type="video/mp4" autoplay loop class="inline mx-auto"
 			></video>
-			<img class="logowhite" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo-white-transparent.png" alt="Mattia Baldi Studio"
+			<img class="logowhite" src="<?php echo $logo_white['url']; ?>" alt="Mattia Baldi Studio"
 				data-anchor-target=".begin"
 				data-bottom-top="transform: translateY(0px); opacity: 1;"
 				data-top-bottom="transform: translateY(250px); opacity: .2"
@@ -36,8 +40,8 @@ get_header(); ?>
 		<!-- nav bar with fade up function fade-in fade-ani-->
         <div class="navbar-wrapper fade-in fade-ani" id="section02" data-spy="affix" data-offset-top="775" >
             <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white" >
-                <a class="navbar-brand" href="<?php echo $nav_home; ?>" id="logoblack">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="Mattia Baldi Studio"></a>
+                <a class="navbar-brand" href="home" id="logoblack">
+				<img src="<?php echo $logo_black['url']; ?>" alt="Mattia Baldi Studio"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,25 +49,25 @@ get_header(); ?>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <center><a class="nav-link" href="<?php echo $nav_works; ?>">WORKS</a></center>
+                            <center><a class="nav-link" href="photos-gallery"><?php echo $nav_works; ?></a></center>
                         </li>
                         <li class="nav-item">
-                            <center><a class="nav-link" href="<?php echo $nav_moving; ?>">MOVING</a></center>
+                            <center><a class="nav-link" href="moving"><?php echo $nav_moving; ?></a></center>
                         </li>
                         <li class="nav-item">
-                            <center><a class="nav-link" href="<?php echo $nav_contact; ?>">CONTACT</a></center>
+                            <center><a class="nav-link" href="contact"><?php echo $nav_contact; ?></a></center>
                         </li>
                         <!-- social icons with the 3x size and on the center-->
                         <li><div class = "row"><div class="span6" style="float: none; margin: 0 auto;">
                             <!--facebook icon -->
-                            <a href="https://facebook.com/mattiabaldi" class="badge social facebook" target="_blank">
+                            <a href="<?php echo $facebook_url;?>" class="badge social facebook" target="_blank">
                                 <span class="fa-stack fa-lg fa-3x">
                                     <span><i class="fa fa-circle fa-stack-2x" style = "color:black"></i></span>
                                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                             <!--instagram icon -->
-                            <a href="http://instagram.com/mattiabaldi_studio" class="badge social instragram" target="_blank">
+                            <a href="<?php echo $instagram_url;?>" class="badge social instragram" target="_blank">
                                 <span class="fa-stack fa-lg fa-3x">
                                     <span><i class="fa fa-circle fa-stack-2x" style = "color:black"></i></span>
                                     <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
@@ -141,16 +145,16 @@ get_header(); ?>
                 <nav class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <center><a class="nav-link" href="<?php echo $nav_home; ?>">HOME<span class="sr-only">HOME</span></a></center>
+                            <center><a class="nav-link" href="home"><?php echo $nav_home; ?><span class="sr-only">HOME</span></a></center>
                         </li>
                         <li class="nav-item active">
-                            <center><a class="nav-link" href="<?php echo $nav_works; ?>">WORKS</a></center>
+                            <center><a class="nav-link" href="photos-gallery"><?php echo $nav_works; ?></a></center>
                         </li>
                         <li class="nav-item">
-                            <center><a class="nav-link" href="<?php echo $nav_moving; ?>">MOVING</a></center>
+                            <center><a class="nav-link" href="moving"><?php echo $nav_moving; ?></a></center>
                         </li>
                         <li class="nav-item">
-                            <center><a class="nav-link" href="<?php echo $nav_contact; ?>">CONTACT</a></center>
+                            <center><a class="nav-link" href="contact"><?php echo $nav_contact; ?></a></center>
                         </li>
                         
                     </ul>

@@ -12,6 +12,7 @@
 $bio					= get_post_meta(14,bio,true);
 $contact_description	= get_post_meta(14,contact_description,true);
 $emailto				= get_post_meta(14,emailto,true);
+$profile_pic			= get_field('profile_picture');
   
 get_header(); ?>
 
@@ -62,7 +63,9 @@ get_header(); ?>
         <div class="container" style="margin-bottom:50px"><div class="row">
             <!--profile picture-->
             <div class="col-md-5">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/babuprofile.jpg" width="300">
+				<?php if(!empty($profile_pic)) : ?>
+					<img src="<?php echo $profile_pic['url']; ?>" width="300">
+				<?php endif; ?>
             </div>
             <!--About-->
             <div class="col-lg-7" style="margin-top:30px">
