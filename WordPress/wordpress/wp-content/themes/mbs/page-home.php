@@ -42,7 +42,7 @@ get_header(); ?>
             <nav class="navbar navbar-dark navbar-inverse" style="opacity:0.9; background-color:white;" >
                 <a class="navbar-brand" href="home" id="logoblack">
 				<img src="<?php echo $logo_black['url']; ?>" alt="Mattia Baldi Studio" width="270px"></a>
-                <i class="fa-bars fa-2x" aria-hidden="true" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars fa-2x" style="color:lightgrey;" aria-hidden="true" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </i>
 				

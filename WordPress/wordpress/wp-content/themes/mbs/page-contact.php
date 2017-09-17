@@ -21,7 +21,7 @@ get_header(); ?>
         <div class="navbar-wrapper">
             <nav class="navbar navbar-dark navbar-inverse fixed-top" role="navigation" style="opacity:0.9; background-color:white;" >
                 <a class="navbar-brand" href="home"><img src="<?php echo $logo_black['url']; ?>" alt="Mattia Baldi Studio" width="270px"></a>
-                <i class="fa-bars fa-2x" aria-hidden="true" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars fa-2x" style="color:lightgrey;" aria-hidden="true" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </i>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
