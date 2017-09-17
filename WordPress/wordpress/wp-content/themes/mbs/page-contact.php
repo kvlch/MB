@@ -13,26 +13,27 @@ $bio					= get_post_meta(14,bio,true);
 $contact_description	= get_post_meta(14,contact_description,true);
 $emailto				= get_post_meta(14,emailto,true);
 $profile_pic			= get_field('profile_picture');
+$logo_black	= get_field('logo_black');
   
 get_header(); ?>
 
 <!-- nav bar fixed top-->
         <div class="navbar-wrapper">
-            <nav class="navbar navbar-dark navbar-inverse fixed-top" role="navigation" style="opacity:0.9;background-color:white" >
-                <a class="navbar-brand" href="<?php echo $nav_home; ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="Mattia Baldi Studio"></a>
+            <nav class="navbar navbar-dark navbar-inverse fixed-top" role="navigation" style="opacity:0.9; background-color:white; margin-top:32px;" >
+                <a class="navbar-brand" href="home"><img src="<?php echo $logo_black['url']; ?>" alt="Mattia Baldi Studio" width="270px"></a>
                 <i class="fa-bars fa-2x" aria-hidden="true" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </i>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <center><a class="nav-link" href="<?php echo $nav_works; ?>">WORKS</a></center>
+                            <center><a class="nav-link" href="photos-gallery" style="color:black; font-size:30px;"><?php echo $nav_works; ?></a></center>
                         </li>
                         <li class="nav-item">
-                            <center><a class="nav-link" href="<?php echo $nav_moving; ?>">MOVING</a></center>
+                            <center><a class="nav-link" href="moving" style="color:black; font-size:30px;"><?php echo $nav_moving; ?></a></center>
                         </li>
                         <li class="nav-item active">
-                            <center><a class="nav-link" href="<?php echo $nav_contact; ?>">CONTACT</a></center>
+                            <center><a class="nav-link" href="contact" style="color:black; font-size:30px;"><?php echo $nav_contact; ?></a></center>
                         </li>
                         <!-- social icons with the 3x size and on the center-->
                         <li><div class = "row"><div class="span6" style="float: none; margin: 0 auto;">
