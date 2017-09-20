@@ -344,7 +344,11 @@ object {
 li {list-style-type: none;}
 			
 .logowhite{
-	position:relative; top:-450px; left:25%;
+	position:relative; 
+	top:-450px; 
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logged-in .navbar-dark{
