@@ -9,6 +9,9 @@
  $nav_works	= get_post_meta(10,nav_works,true);
  $nav_moving	= get_post_meta(10,nav_moving,true);
  $nav_contact	= get_post_meta(10,nav_contact,true);
+ $instagram_url	= get_post_meta(10,instagram_url,true); 
+ $facebook_url	= get_post_meta(10,facebook_url,true);
+ $logo_black	= get_field('logo_black');
  
 get_header(); ?>
 
@@ -17,7 +20,7 @@ get_header(); ?>
           <!-- nav bar fixed top-->
           <div class="navbar-wrapper">
 			<nav class="navbar navbar-dark navbar-inverse fixed-top" role="navigation" style="opacity:0.9;background-color:white" >
-				<a class="navbar-brand" href="<?php echo $nav_home; ?>"><img src="assets/img/logo.png" alt="Mattia Baldi Studio"></a>
+				<a class="navbar-brand" href="home"><img src="<?php echo $logo_black['url']; ?>" alt="Mattia Baldi Studio" width="270px"></a>
 				  <!--View layout icons -->
 				  <div class="container" id="viewlayout_wrapper">
 					<div class="row" style="position:absolute; right:30px; top:1em">
@@ -32,25 +35,25 @@ get_header(); ?>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 				  <ul class="navbar-nav mr-auto">
 					  <li class="nav-item active">
-						  <center><a class="nav-link" href="<?php echo $nav_works; ?>">WORKS</a></center>
+						  <center><a class="nav-link" href="photos-gallery"><?php echo $nav_works; ?></a></center>
 					  </li>
 					  <li class="nav-item">
-						  <center><a class="nav-link" href="<?php echo $nav_moving; ?>">MOVING</a></center>
+						  <center><a class="nav-link" href="moving"><?php echo $nav_moving; ?></a></center>
 					  </li>
 					  <li class="nav-item">
-						  <center><a class="nav-link" href="<?php echo $nav_contact; ?>">CONTACT</a></center>
+						  <center><a class="nav-link" href="contact"><?php echo $nav_contact; ?></a></center>
 					  </li>
 					  <!-- social icons with the 3x size and on the center-->
 					  <li><div class = "row"><div class="span6" style="float: none; margin: 0 auto;">
 						  <!--facebook icon -->
-						  <a href="https://facebook.com/mattiabaldi" class="badge social facebook" target="_blank">
+						  <a href="<?php echo $facebook_url; ?>" class="badge social facebook" target="_blank">
 							  <span class="fa-stack fa-lg fa-3x">
 								  <span><i class="fa fa-circle fa-stack-2x" style = "color:black"></i></span>
 								  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
 							  </span>
 						  </a>
 						  <!--instagram icon -->
-						  <a href="http://instagram.com/mattiabaldi_studio" class="badge social instragram" target="_blank">
+						  <a href="<?php echo $instragram_url; ?>" class="badge social instragram" target="_blank">
 							  <span class="fa-stack fa-lg fa-3x">
 								  <span><i class="fa fa-circle fa-stack-2x" style = "color:black"></i></span>
 								  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
@@ -87,28 +90,30 @@ get_header(); ?>
 				<td class="cell" id="pic17"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/MBtest2.png"></div>
 
 			</tr>
-          </table><!--END ========= Photo Contents -->
+		  </table>
+		  <!--END ========= Photo Contents -->
           
           
-          
+          <!--placeholder div to prevent jumpy content when nav gets pinned-->
+            <div style="padding:2em;" data-0="display:none;" data-top-top="display:block;" data-anchor-target="#nav" data-edge-strategy="set">&nbsp;</div>
           
           <footer>
               
               <!-- nav bar-->
               <div class="navbar-wrapper">
-                  <nav class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation" style="position:absolute; bottom:0px; width:100%;">
+                  <nav class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark fixed-bottom" role="navigation" style="position:absolute; bottom:0px; width:100%;">
                       <ul class="navbar-nav mr-auto">
                           <li class="nav-item">
-                              <center><a class="nav-link" href="<?php echo $nav_home; ?>">HOME<span class="sr-only">HOME</span></a></center>
+                              <center><a class="nav-link" href="home"><?php echo $nav_home; ?><span class="sr-only"><?php echo $nav_home; ?></span></a></center>
                           </li>
                           <li class="nav-item active active">
-                              <center><a class="nav-link" href="<?php echo $nav_works; ?>">WORKS</a></center>
+                              <center><a class="nav-link" href="photos-gallery"><?php echo $nav_works; ?></a></center>
                           </li>
                           <li class="nav-item">
-                              <center><a class="nav-link" href="<?php echo $nav_moving; ?>">MOVING</a></center>
+                              <center><a class="nav-link" href="moving"><?php echo $nav_moving; ?></a></center>
                           </li>
                           <li class="nav-item">
-                              <center><a class="nav-link" href="<?php echo $nav_contact; ?>">CONTACT</a></center>
+                              <center><a class="nav-link" href="contact"><?php echo $nav_contact; ?></a></center>
                           </li>
                           
                       </ul>
