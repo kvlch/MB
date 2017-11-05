@@ -1,18 +1,14 @@
 <?php
 /**
- * The template Name: Home Page
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * The template Name: Works Page
  *
  * @package mbswp
  */
- 
- /*Advanced Custom Fields*/
+/*Custom Fields*/
+ /*main*/
  $instagram_url	= get_post_meta(10,instagram_url,true); 
  $facebook_url	= get_post_meta(10,facebook_url,true);
- $logo_white	= get_field('logo_white');
  $logo_black	= get_field('logo_black');
- $home_page_video_url = get_post_meta(10,home_page_video_url,true);
 get_header(); ?>
 	<!-- remove bullet on the list-->
 		<style>
@@ -22,66 +18,56 @@ get_header(); ?>
 				position:relative; top:-450px; left:25%;
 			}
 		</style>
-	<!-- HEADER -->
-		<!--Greeting Video with fading down function -->
-		<header class="row begin" style="background-color:black">
-			<video src="<?php echo $home_page_video_url; ?>" 
-					type="video/mp4" autoplay class="inline mx-auto"
-			></video>
-			<img class="logowhite" src="<?php echo $logo_white['url']; ?>" style="width:500px mx-auto" alt="Mattia Baldi Studio"
-				data-anchor-target=".begin"
-				data-bottom-top="transform: translateY(0px); opacity: 1;"
-				data-top-bottom="transform: translateY(250px); opacity: .2"
-			></img>
-			<!--Angle down anchor -->
-			<section id="section01" class="demo" 
-				style="position:relative; left:0; top:1px;"
-			><a href="#section02"><span></span></a>
-			</section>
-		</header>
-		<!-- END ============ header-->
-        
-          
-        <!-- nav bar with fade up function fade-in fade-ani-->
-        <div class="navbar-wrapper fade-in fade-ani" id="section02" data-spy="affix" data-offset-top="775" >
-            <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white" >
-                <a class="navbar-brand" href="home" id="logoblack">
-				<img src="<?php echo $logo_black['url']; ?>" style="width:300px" alt="Mattia Baldi Studio"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <center><a class="nav-link" href="works">WORKS</a></center>
-                        </li>
-                        <li class="nav-item">
-                            <center><a class="nav-link" href="#">MOVING</a></center>
-                        </li>
-                        <li class="nav-item">
-                            <center><a class="nav-link" href="contact">CONTACT</a></center>
-                        </li>
-                        <!-- social icons with the 3x size and on the center-->
-                        <li><div class = "row"><div class="span6" style="float: none; margin: 0 auto;">
-                            <!--facebook icon -->
-                            <a href="<?php echo $facebook_url; ?>" class="badge social facebook" target="_blank">
-                                <span class="fa-stack fa-lg fa-3x">
-                                    <span><i class="fa fa-circle fa-stack-2x" style = "color:black"></i></span>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                            <!--instagram icon -->
-                            <a href="<?php echo $instagram_url;?>" class="badge social instragram" target="_blank">
-                                <span class="fa-stack fa-lg fa-3x">
-                                    <span><i class="fa fa-circle fa-stack-2x" style = "color:black"></i></span>
-                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </div></div></li>	<!-- END ============ social icons-->
-                    </ul>
-                </div>
-            </nav>
-		</div><!-- END ================== nav bar with fade up function -->
+        <!-- nav bar fixed top-->
+          <div class="navbar-wrapper">
+			<nav class="navbar navbar-light navbar-inverse fixed-top" role="navigation" style="opacity:0.9;background-color:white" >
+				<a class="navbar-brand" href="home"><img src="<?php echo $logo_black['url']; ?>" style="width:300px" alt="Mattia Baldi Studio"></a>
+				  <!--View layout icons -->
+				  <div class="container" id="viewlayout_wrapper">
+					<div class="row" style="position:absolute; right:30px; top:1em">
+					  <a class="fa fa-table fa-2x" href="photos-grid" style="padding-right:10px; color:grey"></a><!--grid layout-->
+					  <a class="fa fa-columns fa-2x" href="photos-gallery" style="padding-right:10px; color:grey"></a><!--gallery layout-->
+						<!--Toggle Menu -->
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						  <span class="fa fa-navicon fa-1x" style="color:grey"></span>
+					  </button>
+					</div>
+				  </div><!-- END ==== container-->
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+				  <ul class="navbar-nav mr-auto">
+					  <li class="nav-item active">
+						  <center><a class="nav-link" href="works">WORKS</a></center>
+					  </li>
+					  <li class="nav-item">
+						  <center><a class="nav-link" href="#">MOVING</a></center>
+					  </li>
+					  <li class="nav-item">
+						  <center><a class="nav-link" href="contact">CONTACT</a></center>
+					  </li>
+					  <!-- social icons with the 3x size and on the center-->
+					  <li><div class = "row"><div class="span6" style="float: none; margin: 0 auto;">
+						  <!--facebook icon -->
+						  <a href="<?php echo $facebook_url; ?>" class="badge social facebook" target="_blank">
+							  <span class="fa-stack fa-lg fa-3x">
+								  <span><i class="fa fa-circle fa-stack-2x" style = "color:black"></i></span>
+								  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+							  </span>
+						  </a>
+						  <!--instagram icon -->
+						  <a href="<?php echo $instagram_url;?>" class="badge social instragram" target="_blank">
+							  <span class="fa-stack fa-lg fa-3x">
+								  <span><i class="fa fa-circle fa-stack-2x" style = "color:black"></i></span>
+								  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+							  </span>
+						  </a>
+					  </div></div></li>	<!-- END ============ social icons-->
+				  </ul>
+				</div>
+               </nav>
+            </div>
+			
+            <!--placeholder div to prevent jumpy content when nav gets pinned-->
+            <div style="padding:2em;" data-0="display:none;" data-top-top="display:block;" data-anchor-target="#nav" data-edge-strategy="set">&nbsp;</div>
         
 
     <!-- Photo Contents -->
@@ -103,7 +89,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<!--END ========= Photo Contents -->
+    <!--END ========= Photo Contents -->
 	
 	<footer>
             
