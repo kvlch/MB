@@ -19,7 +19,7 @@ get_header(); ?>
 
 <!-- nav bar fixed top-->
         <div class="navbar-wrapper">
-            <nav class="navbar navbar-light navbar-inverse fixed-top" role="navigation" style="opacity:0.9;background-color:white" >
+            <nav class="navbar navbar-light navbar-inverse fixed-top" role="navigation" style="opacity:0.9;background-color:white;" >
                 <a class="navbar-brand" href="home"><img src="<?php echo $logo_black['url']; ?>" style="width:300px" alt="Mattia Baldi Studio"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -79,11 +79,11 @@ get_header(); ?>
         
         
         
-        <footer>
+        
             
-            <!-- nav bar-->
+            <!-- footer-->
             <div class="navbar-wrapper">
-                <nav class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation" style="position:absolute; bottom:0px; width:100%;">
+                <footer class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <center><a class="nav-link" href="home">HOME<span class="sr-only">HOME</span></a></center>
@@ -102,8 +102,8 @@ get_header(); ?>
                     <!--name on the footer-->
                     <p style = "color:white">&copy;2017 Mattia Baldi Studio</p>
                 </nav>
-            </div>
-        </footer>
+            </footer>
+        
         
         
         <!-- Bootstrap core JavaScript

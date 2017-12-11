@@ -21,18 +21,14 @@ get_header(); ?>
 			.logowhite{
 				position:relative; top:-450px; left:25%;
 			}
-		</style>
+		</style> 
 	<!-- HEADER -->
 		<!--Greeting Video with fading down function -->
 		<header class="row begin" style="background-color:black">
 			<video src="<?php echo $home_page_video_url; ?>" 
 					type="video/mp4" autoplay class="inline mx-auto"
 			></video>
-			<img class="logowhite" src="<?php echo $logo_white['url']; ?>" style="width:500px mx-auto" alt="Mattia Baldi Studio"
-				data-anchor-target=".begin"
-				data-bottom-top="transform: translateY(0px); opacity: 1;"
-				data-top-bottom="transform: translateY(250px); opacity: .2"
-			></img>
+			<img class="logowhite" src="<?php echo $logo_white['url']; ?>" style="width:500px center" alt="Mattia Baldi Studio"></img>
 			<!--Angle down anchor -->
 			<section id="section01" class="demo" 
 				style="position:relative; left:0; top:1px;"
@@ -44,7 +40,7 @@ get_header(); ?>
           
         <!-- nav bar with fade up function fade-in fade-ani-->
         <div class="navbar-wrapper fade-in fade-ani" id="section02" data-spy="affix" data-offset-top="775" >
-            <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white" >
+            <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white;font-family: 'MedievalSharp', cursive;" >
                 <a class="navbar-brand" href="home" id="logoblack">
 				<img src="<?php echo $logo_black['url']; ?>" style="width:300px" alt="Mattia Baldi Studio"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,13 +49,13 @@ get_header(); ?>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <center><a class="nav-link" href="works">WORKS</a></center>
+                            <center><a class="nav-link" href="works" style="color:black;"><h2>WORKS</h2></a></center>
                         </li>
                         <li class="nav-item">
-                            <center><a class="nav-link" href="#">MOVING</a></center>
+                            <center><a class="nav-link" href="#"style="color:black;"><h2>MOVING</h2></a></center>
                         </li>
                         <li class="nav-item">
-                            <center><a class="nav-link" href="contact">CONTACT</a></center>
+                            <center><a class="nav-link" href="contact"style="color:black;"><h2>CONTACT</h2></a></center>
                         </li>
                         <!-- social icons with the 3x size and on the center-->
                         <li><div class = "row"><div class="span6" style="float: none; margin: 0 auto;">
@@ -85,7 +81,7 @@ get_header(); ?>
         
 
     <!-- Photo Contents -->
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area" style="color:grey;font-family: 'MedievalSharp', cursive;">
 		<main id="main" class="site-main">
 
 			<?php
@@ -105,11 +101,10 @@ get_header(); ?>
 	</div><!-- #primary -->
 	<!--END ========= Photo Contents -->
 	
-	<footer>
             
             <!-- nav bar-->
             <div class="navbar-wrapper">
-                <nav class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation">
+                <footer class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation" style="font-family: 'MedievalSharp', cursive;">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <center><a class="nav-link" href="home">HOME<span class="sr-only">HOME</span></a></center>
@@ -127,9 +122,9 @@ get_header(); ?>
                     </ul>
                     <!--name on the footer-->
                     <p style = "color:white">&copy;2017 Mattia Baldi Studio</p>
-                </nav>
+                </footer>
             </div>
-        </footer>
+        
         
         
         <!-- Bootstrap core JavaScript

@@ -95,11 +95,10 @@ get_header(); ?>
 	</div><!-- #primary -->
 	<!--END ========= Photo Contents -->
 	
-	<footer>
             
             <!-- nav bar-->
             <div class="navbar-wrapper">
-                <nav class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation">
+                <footer class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <center><a class="nav-link" href="home">HOME<span class="sr-only">HOME</span></a></center>
@@ -117,11 +116,9 @@ get_header(); ?>
                     </ul>
                     <!--name on the footer-->
                     <p style = "color:white">&copy;2017 Mattia Baldi Studio</p>
-                </nav>
+                </footer>
             </div>
-        </footer>
-        
-        
+                
         <!-- Bootstrap core JavaScript
            ================================================== -->
           <!-- Placed at the end of the document so the pages load faster -->
