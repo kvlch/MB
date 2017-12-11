@@ -20,11 +20,7 @@
 	<?php wp_head(); ?>
 	<!--Font-->
 	<link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
-	<style>
-		.body{
-			font-family: 'UnifrakturCook', cursive !important;
-		}
-	</style>
+
 	<!-- Bootstrap core CSS -->
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
 		
