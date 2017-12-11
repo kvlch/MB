@@ -25,24 +25,25 @@ get_header(); ?>
 	<!-- HEADER -->
 		<!--Greeting Video with fading down function -->
 		<header class="row begin" style="background-color:black">
-			<video src="<?php echo $home_page_video_url; ?>" 
+			<iframe src="https://player.vimeo.com/video/245154818?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" 
+			class="mx-auto" height="700px" width="100%"></iframe></div>
+			<!--<video src="<?php echo $home_page_video_url; ?>" 
 					type="video/mp4" autoplay class="inline mx-auto"
-			></video>
-			<img class="logowhite" src="<?php echo $logo_white['url']; ?>" style="width:500px center" alt="Mattia Baldi Studio"></img>
+			></video>-->
+			<img class="logowhite" src="<?php echo $logo_white['url']; ?>" style="width:500px;" alt="Mattia Baldi Studio"></img>
 			<!--Angle down anchor -->
-			<section id="section01" class="demo" 
-				style="position:relative; left:0; top:1px;"
-			><a href="#section02"><span></span></a>
+			<section id="section01" class="demo" style="z-index:1;">
+				<a href="#section02" style="top:-100px;"><span></span></a>
 			</section>
 		</header>
 		<!-- END ============ header-->
         
           
         <!-- nav bar with fade up function fade-in fade-ani-->
-        <div class="navbar-wrapper fade-in fade-ani" id="section02" data-spy="affix" data-offset-top="775" >
-            <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white;font-family: 'MedievalSharp', cursive;" >
+        <div class="navbar-wrapper fade-in fade-ani" id="section02" data-spy="affix" data-offset-top="600" >
+            <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white;font-family: 'MedievalSharp', cursive;color:black;" >
                 <a class="navbar-brand" href="home" id="logoblack">
-				<img src="<?php echo $logo_black['url']; ?>" style="width:300px" alt="Mattia Baldi Studio"></a>
+				<img src="<?php echo $logo_black['url']; ?>" style="width:300px;" alt="Mattia Baldi Studio"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -101,10 +102,11 @@ get_header(); ?>
 	</div><!-- #primary -->
 	<!--END ========= Photo Contents -->
 	
+	<footer>
             
             <!-- nav bar-->
             <div class="navbar-wrapper">
-                <footer class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation" style="font-family: 'MedievalSharp', cursive;">
+                <nav class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation" style="font-family: 'MedievalSharp', cursive;">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <center><a class="nav-link" href="home">HOME<span class="sr-only">HOME</span></a></center>
@@ -122,9 +124,9 @@ get_header(); ?>
                     </ul>
                     <!--name on the footer-->
                     <p style = "color:white">&copy;2017 Mattia Baldi Studio</p>
-                </footer>
+                </nav>
             </div>
-        
+        </footer>
         
         
         <!-- Bootstrap core JavaScript
