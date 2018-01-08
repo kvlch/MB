@@ -13,26 +13,15 @@ get_header(); ?>
 	<!-- remove bullet on the list-->
 		<style>
 			li {list-style-type: none;}
-			
-			.logowhite{
-				position:relative; top:-450px; left:25%;
-			}
 		</style>
         <!-- nav bar fixed top-->
           <div class="navbar-wrapper">
 			<nav class="navbar navbar-light navbar-inverse fixed-top" role="navigation" style="opacity:0.9;background-color:white" >
 				<a class="navbar-brand" href="home"><img src="<?php echo $logo_black['url']; ?>" style="width:300px" alt="Mattia Baldi Studio"></a>
-				  <!--View layout icons -->
-				  <div class="container" id="viewlayout_wrapper">
-					<div class="row" style="position:absolute; right:30px; top:1em">
-					  <a class="fa fa-table fa-2x" href="photos-grid" style="padding-right:10px; color:grey"></a><!--grid layout-->
-					  <a class="fa fa-columns fa-2x" href="photos-gallery" style="padding-right:10px; color:grey"></a><!--gallery layout-->
-						<!--Toggle Menu -->
-					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-						  <span class="fa fa-navicon fa-1x" style="color:grey"></span>
-					  </button>
-					</div>
-				  </div><!-- END ==== container-->
+				 <!--Toggle Menu -->
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="fa fa-navicon fa-1x" style="color:grey"></span>
+				  </button>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 				  <ul class="navbar-nav mr-auto">
 					  <li class="nav-item active">

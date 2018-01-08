@@ -12,36 +12,36 @@
  $facebook_url	= get_post_meta(10,facebook_url,true);
  $logo_white	= get_field('logo_white');
  $logo_black	= get_field('logo_black');
- $home_page_video_url = get_post_meta(10,home_page_video_url,true);
+ /*$home_page_video_url = get_post_meta(10,home_page_video_url,true);*/
 get_header(); ?>
 	<!-- remove bullet on the list-->
 		<style>
 			li {list-style-type: none;}
 			
 			.logowhite{
-				position:relative; top:-450px; left:25%;
+				position:relative; top:-450px;
 			}
 		</style> 
 	<!-- HEADER -->
 		<!--Greeting Video with fading down function -->
-		<header class="row" style="background-color:black" height="850px">
+		<header class="row" style="background-color:black">
 			<iframe src="https://player.vimeo.com/video/245154818?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" 
-			class="mx-auto" height="750px" width="100%"></iframe></div>
+			height="800px" width="100%"></iframe>
 			<!--<video src="<?php echo $home_page_video_url; ?>" 
 					type="video/mp4" autoplay class="inline mx-auto"
 			></video>-->
-			<img class="logowhite mx-auto" src="<?php echo $logo_white['url']; ?>" style="width:500px;" alt="Mattia Baldi Studio"></img>
+			<img class="logowhite mx-auto inline" src="<?php echo $logo_white['url']; ?>" style="width:500px;" alt="Mattia Baldi Studio"></img>
 			<!--Angle down anchor -->
-			<!--<section id="section01" class="demo" style="z-index:1; background-color:black;">
-				<a href="#main" style="top:-100px;"><span></span></a>
-			</section>-->
+			<section id="section01" class="demo" style="z-index:1; background-color:black;">
+				<a href="#main" style="top:-150px;"><span></span></a>
+			</section>
 		</header>
 		<!-- END ============ header-->
         
           
         <!-- nav bar with fade up function fade-in fade-ani-->
-        <div class="navbar-wrapper fade-in fade-ani" data-spy="affix" data-offset-top="0" >
-            <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white;font-family: 'MedievalSharp', cursive;color:black;" >
+        <div class="navbar-wrapper fade-in fade-ani" data-spy="affix" data-offset-top="800" >
+            <nav class="navbar navbar-light navbar-inverse" style="opacity:0.9;background-color:white; color:black;" >
                 <a class="navbar-brand" href="home" id="logoblack">
 				<img src="<?php echo $logo_black['url']; ?>" style="width:300px;" alt="Mattia Baldi Studio"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -106,7 +106,7 @@ get_header(); ?>
             
             <!-- nav bar-->
             <div class="navbar-wrapper">
-                <nav class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation" style="font-family: 'MedievalSharp', cursive;">
+                <nav class="navbar navbar-expand-md navbar-dark navbar-inverse bg-dark" role="navigation">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <center><a class="nav-link" href="home">HOME<span class="sr-only">HOME</span></a></center>
@@ -123,7 +123,7 @@ get_header(); ?>
                         
                     </ul>
                     <!--name on the footer-->
-                    <p style = "color:white">&copy;2017 Mattia Baldi Studio</p>
+                    <p style = "color:white">&copy;2018 Mattia Baldi Studio</p>
                 </nav>
             </div>
         </footer>
