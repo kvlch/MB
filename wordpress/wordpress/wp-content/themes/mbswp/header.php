@@ -19,7 +19,7 @@
 
 	<?php wp_head(); ?>
 	<!--Font-->
-	<link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+	<!--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
 
 	<!-- Bootstrap core CSS -->
 	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
